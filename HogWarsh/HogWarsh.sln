@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HogWarsh", "HogWarsh\HogWarsh.csproj", "{2310A54C-882A-409E-A093-5B09E7CA8B2B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "HogWarsh.Data", "Data\HogWarsh.Data.sqlproj", "{D9B87969-1180-40B6-A86D-FC2836653D59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2310A54C-882A-409E-A093-5B09E7CA8B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2310A54C-882A-409E-A093-5B09E7CA8B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2310A54C-882A-409E-A093-5B09E7CA8B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2310A54C-882A-409E-A093-5B09E7CA8B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9B87969-1180-40B6-A86D-FC2836653D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B87969-1180-40B6-A86D-FC2836653D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B87969-1180-40B6-A86D-FC2836653D59}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D9B87969-1180-40B6-A86D-FC2836653D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B87969-1180-40B6-A86D-FC2836653D59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9B87969-1180-40B6-A86D-FC2836653D59}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
