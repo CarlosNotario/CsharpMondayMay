@@ -3,24 +3,27 @@
     ViewBag.Title = "Enroll";
 }
 
-<h2>What is your student's Information</h2>
+<h2>What is your amazing student's information?</h2>
 
-@using (@Html.BeginForm("ActuallyEnroll", "Student"))
+@using (var form = @Html.BeginForm("actuallyenroll", "student"))
 {
-    <div class="row">
-        <div class="col-md-6">Name:</div>
-        <div class="col-md-6">@Html.TextBoxFor(x=>x.Name)</div>
-    </div>
 
     <div class="row">
-        @Html.DropDownListFor(x=>x.Species,
-            new SelectList(Enum.GetValues(typeof(HogWarsh.Models.Species))),
-            "Select Species")     
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <input type="submit" value="Enroll!"/>
+        <div class="md-col-6">Name:</div>
+        <div class="md-col-6">
+            @Html.TextBoxFor(x => x.Name)
+            @Html.ValidationMessageFor(model => model.Name, "Required", new { @class = "text-danger" })
         </div>
     </div>
+
+    <div class="row">
+        @Html.DropDownListFor(x => x.Species,
+                    new SelectList(Enum.GetValues(typeof(HogWarsh.Models.Species))),
+                    "Select Species")
+    </div>
+
+    <div class="row">
+        <div class="md-col-12"><input type="submit" value="Enroll!" /></div>
+    </div>
+
 }
